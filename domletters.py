@@ -19,6 +19,7 @@ print(inputList)
 total = 0
 for word in inputList:
   count = {}
+  word = word.lower()
   for char in word:
     if char in count:
       count[char] += 1
