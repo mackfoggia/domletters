@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # Mack Foggia - CS 461P - HW 1 - 6/28/2021
 
