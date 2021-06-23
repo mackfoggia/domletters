@@ -11,6 +11,7 @@ while(1):
     fullInput += ' '
   except:
     break
+fullInput = fullInput.lower()
 
 inputList = fullInput.split(' ')
 
@@ -18,16 +19,16 @@ print(inputList)
 
 total = 0
 for word in inputList:
-  count = {}
-  word = word.lower()
-  for char in word:
-    if char in count:
-      count[char] += 1
-    else:
-      count[char] = 1
-
-  max = 0
-  for i, j in count.items():
-    if j > max:
-      max = j
-  print(max)
+  if word.isalpha():
+    count = {}
+    for char in word:
+      if char in count:
+        count[char] += 1
+      else:
+        count[char] = 1
+  
+    max = 0
+    for i, j in count.items():
+      if j > max:
+        max = j
+    print(max)
